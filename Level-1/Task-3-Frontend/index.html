@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Codveda Task Manager</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Codveda Task Manager</h1>
+      <p>Manage your tasks easily</p>
+    </header>
+
+    <main>
+      <section class="task-form">
+        <h2>Add New Task</h2>
+
+        <form id="taskForm">
+          <input
+            type="text"
+            id="title"
+            placeholder="Enter task title"
+            required
+          />
+
+          <textarea
+            id="description"
+            placeholder="Enter task description"
+            required
+          ></textarea>
+
+          <button type="submit">Add Task</button>
+        </form>
+      </section>
+
+      <section class="tasks-section">
+        <h2>Your Tasks</h2>
+
+        <div id="taskList">
+          <!-- Tasks will be loaded here using JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
